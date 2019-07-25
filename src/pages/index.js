@@ -1,11 +1,15 @@
 import React from "react";
+import { Link } from "gatsby";
 
-const index = () => {
+import Layout from "../components/Layout";
+
+export default function index() {
   return (
-    <div>
-      <h1>Hello, World!</h1>
-    </div>
+    <Layout>
+      <h1>Hello.</h1>
+      <p>
+        <Link to="/contact">Contact</Link>
+      </p>
+    </Layout>
   );
-};
-
-export default index;
+}
