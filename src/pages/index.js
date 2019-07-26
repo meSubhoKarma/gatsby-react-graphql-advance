@@ -1,7 +1,7 @@
-import React from "react";
-import { Link } from "gatsby";
+import React from "react"
+import { Link } from "gatsby"
 
-import Layout from "../components/Layout";
+import Layout from "../components/Layout"
 
 export default function index() {
   return (
@@ -11,5 +11,5 @@ export default function index() {
         <Link to="/contact">Contact</Link>
       </p>
     </Layout>
-  );
+  )
 }
