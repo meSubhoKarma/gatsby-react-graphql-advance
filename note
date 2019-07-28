@@ -1,1 +1,27 @@
 1. put .env file in the /root with "GATSBY_GRAPHQL_IDE=playground" in and "dev": "env-cmd gatsby develop" script in package.json to run graphql playground
+
+2. 1 - generate a slug
+    gatsby.md -> gatsby -> /blog/gatsby
+    
+    test the slug in playground --
+    query {
+      allMarkdownRemark {
+        edges {
+          node {
+            frontmatter {
+              title
+              date
+            }
+            html
+            excerpt
+            fields{
+              slug
+            }
+          }
+        }
+      }
+    }
+
+  2 - generate a blog post page template
+
+  3 - generate a new page for each post
