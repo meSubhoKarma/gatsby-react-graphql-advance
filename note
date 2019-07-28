@@ -1,0 +1,1 @@
+1. put .env file in the /root with "GATSBY_GRAPHQL_IDE=playground" in and "dev": "env-cmd gatsby develop" script in package.json to run graphql playground
