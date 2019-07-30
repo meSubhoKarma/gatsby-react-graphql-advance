@@ -9,9 +9,6 @@ export default function index() {
     <Layout>
       <Head title="Home" />
       <h1>Hello.</h1>
-      <p>
-        <Link to="/contact">Contact</Link>
-      </p>
     </Layout>
   );
 }
