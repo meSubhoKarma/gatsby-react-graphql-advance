@@ -3,6 +3,7 @@ import { Link, graphql, useStaticQuery } from "gatsby";
 
 import Layout from "../components/Layout";
 import blogStyles from "./blog.module.scss";
+import Head from "../components/Head";
 
 /////////////////////////// CMS setup ////////////////////////
 
@@ -28,6 +29,7 @@ export default function blog() {
 
   return (
     <Layout>
+      <Head title="Blog" />
       <h1>Blog</h1>
       <ol className={blogStyles.posts}>
         {data.allContentfulBlogPost.edges.map(edge => {

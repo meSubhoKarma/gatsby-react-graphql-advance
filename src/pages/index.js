@@ -7,7 +7,7 @@ import Head from "../components/Head";
 export default function index() {
   return (
     <Layout>
-      <Head />
+      <Head title="Home" />
       <h1>Hello.</h1>
       <p>
         <Link to="/contact">Contact</Link>
